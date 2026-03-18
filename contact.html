@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DriveSmart Auto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-car me-2"></i>DriveSmart Auto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-3">Get In Touch</h1>
+                    <p class="lead text-white-50">We're here to help with all your automotive needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="contact-card text-center h-100 scroll-fade">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Visit Our Shop</h4>
+                        <p class="mb-3">123 Auto Street<br>Motor City, ST 12345</p>
+                        <p class="text-muted">Easy parking available</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card text-center h-100 scroll-fade">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Call Us</h4>
+                        <p class="mb-3">
+                            <a href="tel:+15551234567" class="text-decoration-none">(555) 123-4567</a><br>
+                            <a href="tel:+15559876543" class="text-decoration-none">(555) 987-6543</a>
+                        </p>
+                        <p class="text-muted">24/7 Emergency Line</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card text-center h-100 scroll-fade">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Email Us</h4>
+                        <p class="mb-3">
+                            <a href="mailto:info@drivesmartauto.com" class="text-decoration-none">info@drivesmartauto.com</a><br>
+                            <a href="mailto:service@drivesmartauto.com" class="text-decoration-none">service@drivesmartauto.com</a>
+                        </p>
+                        <p class="text-muted">Quick response guaranteed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Hours -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="support-hours text-center">
+                        <h3 class="fw-bold mb-4">Support Hours</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="hours-card">
+                                    <h5 class="fw-bold text-primary">Service Center</h5>
+                                    <p class="mb-2">Monday - Friday: 7:00 AM - 7:00 PM</p>
+                                    <p class="mb-2">Saturday: 8:00 AM - 5:00 PM</p>
+                                    <p class="mb-0">Sunday: 9:00 AM - 3:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="hours-card">
+                                    <h5 class="fw-bold text-primary">Emergency Support</h5>
+                                    <p class="mb-2">24/7 Roadside Assistance</p>
+                                    <p class="mb-2">Towing Services Available</p>
+                                    <p class="mb-0">Call: (555) 911-AUTO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="fw-bold">Find Us On The Map</h3>
+                    <p class="text-muted">Conveniently located in the heart of Motor City</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4654!2d-83.0458!3d42.3314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzUzLjAiTiA4M8KwMDInNDUuMCJX!5e0!3m2!1sen!2sus!4v1625097600000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Forms -->
+    <section class="contact-forms py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Contact & Account Management</h2>
+                    <p class="lead text-muted">Send us a message or manage your account</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Tab Navigation -->
+                    <ul class="nav nav-pills nav-justified mb-4" id="contactTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="contact-tab" data-bs-toggle="pill" data-bs-target="#contact" type="button" role="tab">
+                                <i class="fas fa-envelope me-2"></i>Contact Us
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="login-tab" data-bs-toggle="pill" data-bs-target="#login" type="button" role="tab">
+                                <i class="fas fa-sign-in-alt me-2"></i>Login
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#register" type="button" role="tab">
+                                <i class="fas fa-user-plus me-2"></i>Register
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="contactTabContent">
+                        <!-- Contact Form -->
+                        <div class="tab-pane fade show active" id="contact" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <h4 class="fw-bold mb-4 text-center">Send Us a Message</h4>
+                                    <form id="contactForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="contactName" class="form-label">Full Name *</label>
+                                                <input type="text" class="form-control" id="contactName" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="contactEmail" class="form-label">Email Address *</label>
+                                                <input type="email" class="form-control" id="contactEmail" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="contactPhone" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="contactPhone">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="contactSubject" class="form-label">Subject *</label>
+                                                <select class="form-select" id="contactSubject" required>
+                                                    <option value="">Select a subject</option>
+                                                    <option value="service">Service Inquiry</option>
+                                                    <option value="appointment">Schedule Appointment</option>
+                                                    <option value="quote">Request Quote</option>
+                                                    <option value="complaint">Complaint</option>
+                                                    <option value="compliment">Compliment</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="contactMessage" class="form-label">Message *</label>
+                                                <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="contactCaptcha" required>
+                                                    <label class="form-check-label" for="contactCaptcha">
+                                                        I'm not a robot (Simple Captcha)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                    <button type="reset" class="btn btn-outline-secondary me-md-2">Reset</button>
+                                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="contactSuccess" class="alert alert-success mt-3 d-none">
+                                        Thank you for your message! We'll get back to you within 24 hours.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Login Form -->
+                        <div class="tab-pane fade" id="login" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <h4 class="fw-bold mb-4 text-center">Login to Your Account</h4>
+                                    <form id="pageLoginForm">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label for="pageLoginEmail" class="form-label">Email Address</label>
+                                                <input type="email" class="form-control form-control-lg" id="pageLoginEmail" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="pageLoginPassword" class="form-label">Password</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control form-control-lg" id="pageLoginPassword" required>
+                                                    <button type="button" class="btn btn-outline-secondary" id="togglePageLoginPassword">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="pageRememberMe">
+                                                    <label class="form-check-label" for="pageRememberMe">
+                                                        Remember me on this device
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <hr class="my-4">
+                                    
+                                    <div class="text-center">
+                                        <p class="mb-3">Or continue with:</p>
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                            <button class="btn btn-outline-danger">
+                                                <i class="fab fa-google me-2"></i>Google
+                                            </button>
+                                            <button class="btn btn-outline-primary">
+                                                <i class="fab fa-facebook-f me-2"></i>Facebook
+                                            </button>
+                                        </div>
+                                        <p class="mt-3 text-muted">
+                                            <a href="#" class="text-decoration-none">Forgot your password?</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Register Form -->
+                        <div class="tab-pane fade" id="register" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <h4 class="fw-bold mb-4 text-center">Create New Account</h4>
+                                    <form id="pageRegisterForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="pageRegisterFirstName" class="form-label">First Name *</label>
+                                                <input type="text" class="form-control" id="pageRegisterFirstName" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="pageRegisterLastName" class="form-label">Last Name *</label>
+                                                <input type="text" class="form-control" id="pageRegisterLastName" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="pageRegisterEmail" class="form-label">Email Address *</label>
+                                                <input type="email" class="form-control" id="pageRegisterEmail" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="pageRegisterPassword" class="form-label">Password *</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control" id="pageRegisterPassword" required>
+                                                    <button type="button" class="btn btn-outline-secondary" id="togglePageRegisterPassword">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="form-text">Minimum 8 characters with letters and numbers</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="pageConfirmPassword" class="form-label">Confirm Password *</label>
+                                                <input type="password" class="form-control" id="pageConfirmPassword" required>
+                                                <div id="pagePasswordError" class="text-danger mt-2 d-none">Passwords do not match</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="pageRegisterPhone" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="pageRegisterPhone">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="pageRegisterCaptcha" required>
+                                                    <label class="form-check-label" for="pageRegisterCaptcha">
+                                                        I'm not a robot (Simple Captcha)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                                    <label class="form-check-label" for="agreeTerms">
+                                                        I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <hr class="my-4">
+                                    
+                                    <div class="text-center">
+                                        <p class="mb-3">Or register with:</p>
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                            <button class="btn btn-outline-danger">
+                                                <i class="fab fa-google me-2"></i>Google
+                                            </button>
+                                            <button class="btn btn-outline-primary">
+                                                <i class="fab fa-facebook-f me-2"></i>Facebook
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-car me-2"></i>DriveSmart Auto
+                    </h5>
+                    <p class="mb-3">Your trusted automotive partner for reliable, professional, and affordable car care services.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li><a href="#" class="text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Engine Repair</a></li>
+                        <li><a href="#" class="text-white-50">Oil Changes</a></li>
+                        <li><a href="#" class="text-white-50">Car Detailing</a></li>
+                        <li><a href="#" class="text-white-50">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Auto Street, City, ST 12345</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@drivesmartauto.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 DriveSmart Auto. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="loginPassword" required>
+                                <button type="button" class="btn btn-outline-secondary" id="toggleLoginPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create New Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="registerPassword" required>
+                                <button type="button" class="btn btn-outline-secondary" id="toggleRegisterPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <div id="passwordError" class="text-danger mt-2 d-none">Passwords do not match</div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

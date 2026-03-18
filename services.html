@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - DriveSmart Auto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="services-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-car me-2"></i>DriveSmart Auto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-3">Our Expertise</h1>
+                    <p class="lead text-white-50">Professional automotive services tailored to your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="service-categories py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="service-item scroll-fade" id="diagnostics">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/3807270/pexels-photo-3807270.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Engine Diagnostics" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">
+                                        <i class="fas fa-stethoscope text-primary me-2"></i>Engine Diagnostics
+                                    </h4>
+                                    <p class="mb-3">State-of-the-art computer diagnostics to quickly identify engine problems, from check engine lights to performance issues.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li><i class="fas fa-check text-success me-2"></i>OBD-II Scanning</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Performance Testing</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Emission Testing</li>
+                                    </ul>
+                                    <p class="text-primary fw-bold">Starting at $89</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-item scroll-fade" id="maintenance">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Oil Change" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">
+                                        <i class="fas fa-oil-can text-primary me-2"></i>Oil Change & Maintenance
+                                    </h4>
+                                    <p class="mb-3">Regular maintenance services to keep your vehicle running efficiently and extend its lifespan.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li><i class="fas fa-check text-success me-2"></i>Full Synthetic Oil</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Filter Replacement</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Multi-Point Inspection</li>
+                                    </ul>
+                                    <p class="text-primary fw-bold">Starting at $49</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-item scroll-fade" id="detailing">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Car Detailing" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">
+                                        <i class="fas fa-sparkles text-primary me-2"></i>Full Car Detailing
+                                    </h4>
+                                    <p class="mb-3">Complete interior and exterior detailing services to restore your car's showroom shine.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li><i class="fas fa-check text-success me-2"></i>Exterior Wash & Wax</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Interior Deep Clean</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Paint Protection</li>
+                                    </ul>
+                                    <p class="text-primary fw-bold">Starting at $149</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-item scroll-fade">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/5835268/pexels-photo-5835268.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Brake Service" class="img-fluid h-100 object-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">
+                                        <i class="fas fa-tools text-primary me-2"></i>Brake Service
+                                    </h4>
+                                    <p class="mb-3">Comprehensive brake inspection, repair, and replacement services for your safety.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li><i class="fas fa-check text-success me-2"></i>Brake Pad Replacement</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Rotor Resurfacing</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Brake Fluid Flush</li>
+                                    </ul>
+                                    <p class="text-primary fw-bold">Starting at $199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+                    <p class="lead text-muted">Get answers to common questions about our services</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How often should I change my oil?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend changing your oil every 5,000-7,500 miles for conventional oil and every 7,500-10,000 miles for full synthetic oil, depending on your driving conditions and vehicle manufacturer recommendations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer warranties on your work?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we provide a comprehensive warranty on all our services. Labor is covered for 12 months or 12,000 miles, and parts come with manufacturer warranties ranging from 1-3 years.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I wait while my car is being serviced?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We have a comfortable waiting area with complimentary Wi-Fi, coffee, and refreshments. For longer services, we also offer shuttle service to nearby locations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you work on all vehicle makes and models?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, our certified technicians are trained to work on all major vehicle makes and models, including domestic, European, and Asian vehicles. We use the latest diagnostic equipment and genuine or OEM-quality parts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold text-white mb-3">Why Choose DriveSmart Auto?</h2>
+                    <p class="lead text-white-50">Experience the difference with our professional automotive services</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center scroll-fade">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-white">Certified Technicians</h4>
+                        <p class="text-white-50">ASE-certified professionals with years of experience and ongoing training on the latest automotive technologies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center scroll-fade">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-white">Affordable Pricing</h4>
+                        <p class="text-white-50">Competitive rates with transparent pricing and no hidden fees. Quality service that fits your budget.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center scroll-fade">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-white">24/7 Support</h4>
+                        <p class="text-white-50">Round-the-clock emergency roadside assistance and customer support when you need it most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+                    <p class="lead text-muted">Real feedback from satisfied customers</p>
+                </div>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <blockquote class="blockquote mb-4">
+                                        <p class="lead">"Excellent service! They diagnosed my engine problem quickly and fixed it at a fair price. The staff was professional and kept me informed throughout the process."</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <h5 class="fw-bold">Sarah Johnson</h5>
+                                        <p class="text-muted">Honda Civic Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <blockquote class="blockquote mb-4">
+                                        <p class="lead">"I've been bringing my cars here for years. Honest, reliable, and always does quality work. The waiting area is comfortable and the prices are reasonable."</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <h5 class="fw-bold">Mike Rodriguez</h5>
+                                        <p class="text-muted">Toyota Camry Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <blockquote class="blockquote mb-4">
+                                        <p class="lead">"The car detailing service was amazing! My car looks brand new. The team pays attention to every detail and the results speak for themselves."</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <h5 class="fw-bold">Emily Chen</h5>
+                                        <p class="text-muted">BMW 3 Series Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-5">
+                            <h3 class="text-center fw-bold mb-4">Share Your Feedback</h3>
+                            <p class="text-center text-muted mb-4">We value your opinion and would love to hear about your experience</p>
+                            <form id="feedbackForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="feedbackName" class="form-label">Name *</label>
+                                        <input type="text" class="form-control" id="feedbackName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="feedbackEmail" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="feedbackEmail" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="feedbackPhone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="feedbackPhone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="feedbackService" class="form-label">Service Used</label>
+                                        <select class="form-select" id="feedbackService">
+                                            <option value="">Select a service</option>
+                                            <option value="diagnostics">Engine Diagnostics</option>
+                                            <option value="maintenance">Oil Change & Maintenance</option>
+                                            <option value="detailing">Car Detailing</option>
+                                            <option value="brake">Brake Service</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="feedbackMessage" class="form-label">Your Feedback *</label>
+                                        <textarea class="form-control" id="feedbackMessage" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <button type="reset" class="btn btn-outline-secondary me-md-2">Reset</button>
+                                            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="feedbackSuccess" class="alert alert-success mt-3 d-none">
+                                Thank you for your feedback! We appreciate your input and will use it to improve our services.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-car me-2"></i>DriveSmart Auto
+                    </h5>
+                    <p class="mb-3">Your trusted automotive partner for reliable, professional, and affordable car care services.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li><a href="#" class="text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Engine Repair</a></li>
+                        <li><a href="#" class="text-white-50">Oil Changes</a></li>
+                        <li><a href="#" class="text-white-50">Car Detailing</a></li>
+                        <li><a href="#" class="text-white-50">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Auto Street, City, ST 12345</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@drivesmartauto.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 DriveSmart Auto. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="loginPassword" required>
+                                <button type="button" class="btn btn-outline-secondary" id="toggleLoginPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create New Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="registerPassword" required>
+                                <button type="button" class="btn btn-outline-secondary" id="toggleRegisterPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <div id="passwordError" class="text-danger mt-2 d-none">Passwords do not match</div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
